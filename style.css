@@ -1,0 +1,154 @@
+/* Style Settings */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap');
+
+:root {
+    --color-bg: #ffffff;
+    --color-A: #4b4b4b;
+    --color-B: #f04dba;
+    --color-links: #21b380;
+    --color-links-hover: #47d363;
+    --font: 'Josefin Sans', sans-serif;
+}
+
+body{
+    margin: 0px;
+    font-family: var(--font);
+    background-color: var(--color-bg);
+}
+
+
+.cart-container{
+    text-align: center;
+    background-image: url("assets/lines.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+    max-height: 700px;
+}
+.cart-container-decoration{
+    background-image: url("assets/decoration.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+    height: 24px;
+}
+#cart-image{
+    width: 80%;
+    max-width: 700px;
+}
+
+
+
+
+
+.title{
+    color: var(--color-B);
+    font-size: 45px;
+    font-weight: bold;
+}
+.subtitle{
+    color: var(--color-B);
+    font-size: 30px;
+    margin-bottom: 30px; 
+    font-weight: bold;   
+}
+
+.seccion{
+    color: var(--color-B);
+    font-size: 20px;
+    margin-left: 20px;
+    /* margin-bottom: 0px;     */
+    /* padding: 0px;     */
+    text-align: left;
+}
+.container{
+    text-align: center;
+    color: var(--color-A);
+    margin: auto;
+    padding: 15px;
+    margin-top: 20px;
+    max-width: 1000px;
+}
+
+.separator{
+    margin: 30px;
+    height: 20px;
+    text-align: center;
+}
+
+ul{
+    margin-top: 0;
+    text-align: left;
+}
+
+
+/* unvisited link */
+a:link {
+    color: var(--color-links);
+    text-decoration: none
+}
+a:visited {
+    color: var(--color-links);
+    /* text-decoration: none */
+}
+
+
+/* mouse over link */
+a:hover {
+    color: var(--color-links-hover);
+}
+  
+
+
+
+
+
+
+
+
+div.gallery {
+    border: 1px solid #ccc;
+    
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 20px;
+}
