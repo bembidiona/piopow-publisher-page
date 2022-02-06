@@ -53,12 +53,21 @@ body{
 
 .seccion{
     color: var(--color-B);
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 20px;
     /* margin-bottom: 0px;     */
     /* padding: 0px;     */
     text-align: left;
 }
+
+.subseccion{
+    /* color: var(--color-B); */
+    font-size: 18px;
+    margin-left: 20px;
+    text-align: left;
+     font-weight: bold;
+}
+
 .container{
     text-align: center;
     color: var(--color-A);
@@ -105,21 +114,25 @@ a:hover {
 
 
 div.gallery {
-    border: 1px solid #ccc;
-    
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px 25px 0px 0px;
+    padding-bottom: 20px;
   }
   
   div.gallery:hover {
-    border: 1px solid #777;
+    border: 1px solid rgb(255, 255, 255);
   }
   
   div.gallery img {
     width: 100%;
     height: auto;
+    /* -ms-interpolation-mode: nearest-neighbor; */
+    image-rendering: pixelated;
+    border-radius: 25px;
   }
   
   div.desc {
-    padding: 15px;
+    padding: px;
     text-align: center;
   }
   
@@ -128,17 +141,18 @@ div.gallery {
   }
   
   .responsive {
-    padding: 0 6px;
+    /* padding: 0 4px; */
+    
     float: left;
-    width: 24.99999%;
+    width: 50%;
   }
   
-  @media only screen and (max-width: 700px) {
+  /* @media only screen and (max-width: 700px) {
     .responsive {
       width: 49.99999%;
       margin: 6px 0;
     }
-  }
+  } */
   
   @media only screen and (max-width: 500px) {
     .responsive {
