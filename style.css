@@ -8,6 +8,7 @@
     --color-links: #21b380;
     --color-links-hover: #47d363;
     --font: 'Josefin Sans', sans-serif;
+    font-size: 18px;
 }
 
 body{
@@ -53,7 +54,7 @@ body{
 
 .seccion{
     color: var(--color-B);
-    font-size: 25px;
+    font-size: 28px;
     margin-left: 20px;
     /* margin-bottom: 0px;     */
     /* padding: 0px;     */
@@ -149,12 +150,12 @@ div.gallery {
   
   /* @media only screen and (max-width: 700px) {
     .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
+      width: 50%;
+ 
     }
   } */
   
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 800px) {
     .responsive {
       width: 100%;
     }
