@@ -1,6 +1,22 @@
 /* Style Settings */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap');
 
+@font-face { /* pls don't sue me gaby uwu */
+    font-family: 'barbis_roundedbold';
+    src: url('assets/barbis_rounded_bold-webfont-webfont.woff2') format('woff2'),
+         url('assets/barbis_rounded_bold-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'junegullregular';
+  src: url('assets/junegull_rg-webfont.woff2') format('woff2'),
+       url('assets/junegull_rg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
     --color-bg: #ffffff;
     --color-A: #4b4b4b;
@@ -15,12 +31,26 @@ body{
     margin: 0px;
     font-family: var(--font);
     background-color: var(--color-bg);
+    background-image: url("assets/bg-tex-fabric.png");
 }
 
+#background-video {
+  width: 100vw;
+  max-height: 500px;
+  /* height: 100vh; */
+  /* object-fit: cover; */
+  /* position: fixed; */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;  
+}
 
 .cart-container{
     text-align: center;
     background-image: url("assets/lines.png");
+    /* background-image: linear-gradient(#13151b, #111735); */
     background-repeat: repeat-x;
     background-position: left top;
     max-height: 700px;
@@ -38,35 +68,39 @@ body{
 
 
 
-
-
 .title{
     color: var(--color-B);
-    font-size: 45px;
+    font-size: 60px;
     font-weight: bold;
+    font-family: 'junegullregular', 'Josefin Sans', sans-serif;
 }
 .subtitle{
     color: var(--color-B);
     font-size: 30px;
     margin-bottom: 30px; 
-    font-weight: bold;   
+    font-weight: bold;
+    font-family: 'barbis_roundedbold', 'Josefin Sans', sans-serif;
 }
 
 .seccion{
     color: var(--color-B);
-    font-size: 28px;
-    margin-left: 20px;
+    font-size: 34px;
+    margin-left: 25px;
+    margin-bottom: 5px;
     /* margin-bottom: 0px;     */
     /* padding: 0px;     */
     text-align: left;
+    font-family: 'barbis_roundedbold', 'Josefin Sans', sans-serif;
 }
 
 .subseccion{
     /* color: var(--color-B); */
     font-size: 18px;
-    margin-left: 20px;
+    margin-left: 25px;
+    margin-bottom: 5px;
     text-align: left;
-     font-weight: bold;
+    font-weight: bold;
+    font-family: 'barbis_roundedbold', 'Josefin Sans', sans-serif;
 }
 
 .container{
@@ -115,51 +149,55 @@ a:hover {
 
 
 div.gallery {
-    border: 1px solid rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 25px 25px 0px 0px;
     padding-bottom: 20px;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid rgb(255, 255, 255);
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-    /* -ms-interpolation-mode: nearest-neighbor; */
-    image-rendering: pixelated;
-    border-radius: 25px;
-  }
-  
-  div.desc {
-    padding: px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    /* padding: 0 4px; */
     
-    float: left;
+  }
+  
+  
+div.gallery img {
+  width: 100%;
+  height: auto;
+  /* -ms-interpolation-mode: nearest-neighbor; */
+  image-rendering: pixelated;
+  border-radius: 25px;
+
+  /* padding:10px; */
+
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.63);
+  
+}
+
+div.desc {
+  padding: px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  /* padding: 0 4px; */
+  
+  float: left;
+  width: 50%;
+}
+
+/* @media only screen and (max-width: 700px) {
+  .responsive {
     width: 50%;
+
   }
-  
-  /* @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 50%;
- 
-    }
-  } */
-  
-  @media only screen and (max-width: 800px) {
-    .responsive {
-      width: 100%;
-    }
+} 
+*/
+
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 100%;
   }
+}
 
 .clearfix:after {
   content: "";
@@ -167,3 +205,28 @@ div.gallery {
   clear: both;
   margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+div.poster {
+  border-radius: 25px 25px 0px 0px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+div.poster img {
+  width: 70%;
+  height: auto;
+  /* -ms-interpolation-mode: nearest-neighbor; */
+  image-rendering: auto;
+  border-radius: 25px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.63);
+}
+
+
+
+
