@@ -222,14 +222,11 @@ div.desc {
 
 div.poster {
   border-radius: 25px 25px 0px 0px;
-  padding-bottom: 20px;
   text-align: center;
 }
 
 div.poster img {
-  width: 70%;
-  height: auto;
-  /* -ms-interpolation-mode: nearest-neighbor; */
+  max-height: 600px;
   image-rendering: auto;
   border-radius: 25px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.63);
