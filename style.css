@@ -118,6 +118,12 @@ body{
     text-align: center;
 }
 
+.parade {
+  margin: 10px;
+  height: 200px;
+  text-align: center;
+}
+
 ul{
     margin-top: 0;
     text-align: left;
