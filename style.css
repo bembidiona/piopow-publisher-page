@@ -70,16 +70,15 @@ body{
 
 .title{
     color: var(--color-B);
-    font-size: 60px;
+    font-size: 75px;
     font-weight: bold;
     font-family: 'junegullregular', 'Josefin Sans', sans-serif;
 }
 .subtitle{
-    color: var(--color-B);
-    font-size: 30px;
-    margin-bottom: 30px; 
-    font-weight: bold;
+    color: var(--color-A);
+    font-size: 25px;
     font-family: 'barbis_roundedbold', 'Josefin Sans', sans-serif;
+    font-style: italic;
 }
 
 .seccion{
@@ -120,13 +119,19 @@ body{
 
 .parade {
   margin: 10px;
-  height: 200px;
+  max-height: 100px;
   text-align: center;
+  opacity: 40%;
 }
 
 ul{
     margin-top: 0;
     text-align: left;
+}
+
+li{
+  margin-left:5px;
+  margin-bottom:2px;
 }
 
 
