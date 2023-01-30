@@ -70,13 +70,13 @@ body{
 
 .title{
     color: var(--color-B);
-    font-size: 75px;
+    font-size: 40px;
     font-weight: bold;
     font-family: 'junegullregular', 'Josefin Sans', sans-serif;
 }
 .subtitle{
     color: var(--color-A);
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'barbis_roundedbold', 'Josefin Sans', sans-serif;
     font-style: italic;
 }
@@ -104,11 +104,23 @@ body{
 
 .container{
     text-align: center;
+    
     color: var(--color-A);
-    margin: auto;
-    padding: 15px;
-    margin-top: 20px;
-    max-width: 1000px;
+    /* margin: auto; */
+    /* padding: 15px; */
+    /* margin-top: 20px; */
+    /* max-width: 1000px; */
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    /* left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); */
 }
 
 .separator{
